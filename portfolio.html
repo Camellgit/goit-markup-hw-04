@@ -25,28 +25,52 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <a class="log" href="./index.html">WebStudio</a>
-        <nav class="nav-header">
+    <header>
+      <div class="container">
+        <div class="header">
+          <a class="log" href="./index.html">WebStudio</a>
+          <nav class="nav-header">
+            <ul class="ul-header">
+              <li class="nav-item">
+                <a href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item link-active">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item"><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
           <ul class="ul-header">
-            <li class="nav-item"><a href="./index.html">Studio</a></li>
-            <li class="nav-item link-active">
-              <a href="./portfolio.html">Portfolio</a>
+            <li class="li-item">
+              <a
+                class="link-address"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon-mail">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav-item"><a href="#">Contacts</a></li>
+            <li class="li-item">
+              <a
+                class="link-address"
+                href="tel:+525555296000"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon-cellphone">
+                  <use href="./images/icons.svg#icon-cellphone"></use>
+                </svg>
+                +52 55 5529 6000
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="ul-header">
-          <li class="li-item">
-            <a href="mailto:Info@devstudio.com">Info@devstudio.com</a>
-          </li>
-          <li class="li-item">
-            <a href="tel:+38 096 111 111 111">38096 111 111 111</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section">
         <div class="container">
@@ -141,32 +165,63 @@
         </div>
       </section>
     </main>
-    <footer class="contact-address">
+    <footer>
       <div class="container">
-        <a class="log" href="./index.html">WebStudio</a>
-        <address>
-          <ul class="footer-contact-section">
-            <li class="office-address">
-              <a
-                href="https://goo.gl/maps/UZ35Rtt92iHCTSNJ8"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Calz. Ticomán 500, Ciudad de
-                <div>México, CDMX, México</div>
-              </a>
-            </li>
-            <li class="mail-phone">
-              <a href="mailto:Info@devstudio.com" class="mail"
-                >Info@devstudio.com</a
-              >
-            </li>
-            <li class="mail-phone">
-              <a href="tel:+38 096 111 111 111" class="tel"
-                >38096 111 111 111</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="contact-address">
+          <div class="footer-position">
+            <div>
+              <a class="log" href="./index.html">WebStudio</a>
+              <address>
+                <ul>
+                  <li class="office-address">
+                    <a
+                      href="https://goo.gl/maps/UZ35Rtt92iHCTSNJ8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Calz. Ticomán 500, Ciudad de
+                      <div>México, CDMX, México</div>
+                    </a>
+                  </li>
+                  <li class="mail-phone">
+                    <a href="mailto:Info@devstudio.com" class="mail"
+                      >Info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="mail-phone">
+                    <a href="tel:+38 096 111 111 111" class="tel"
+                      >38096 111 111 111</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="flex-list-footer">
+              <h2 class="h2-find">FIND US</h2>
+              <div class="flex-list-order">
+                <div class="icon-socialcontainer-footer">
+                  <svg class="icon-social-footer">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+                <div class="icon-socialcontainer-footer">
+                  <svg class="icon-social-footer">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                <div class="icon-socialcontainer-footer">
+                  <svg class="icon-social-footer">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                <div class="icon-socialcontainer-footer">
+                  <svg class="icon-social-footer">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

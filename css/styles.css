@@ -23,6 +23,12 @@ body {
   width: 1200px;
 }
 
+.svg-benefits {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -33,6 +39,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 15px 0px;
   border-bottom: 1px solid #eee;
 }
 
@@ -44,10 +51,31 @@ body {
 .info-header {
   color: var(--detail-color);
 }
-.svg-benefits {
-  width: 70px;
-  height: 70px;
-  margin: 25px 100px;
+
+.link-address:is(:hover, :focus) .icon-cellphone {
+  fill: var(--secundary-color);
+}
+
+.link-address:is(:hover, :focus) .icon-mail {
+  fill: var(--secundary-color);
+}
+
+.link-address:is(:hover, :focus) {
+  color: var(--secundary-color);
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: var(--detail-color);
+  padding-right: 5px;
+}
+
+.icon-cellphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--detail-color);
+  padding-right: 5px;
 }
 
 .contact {
@@ -89,7 +117,7 @@ a {
   text-decoration: none;
 }
 
-/*generic*/
+/*log*/
 
 .log {
   margin-top: 9px;
@@ -122,12 +150,27 @@ a {
 }
 
 .introduction {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-group {
+  background-color: var(--back-color);
+  width: 1600px;
+  height: 600px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  background-color: var(--back-color);
+  text-align: center;
+  background-image: url(../images/backgroundgroup.jpg);
+  background-position: center;
+  background-position-x: 15%;
+  opacity: 0.9;
+  background-blend-mode: overlay;
 }
+
 .introduction h1 {
   font-family: 'Roboto';
   font-style: normal;
@@ -165,15 +208,60 @@ a {
   text-align: start;
 }
 
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 95px;
+  gap: 30px;
+}
+
+.icon-container {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin: 4px;
+}
+
 .li-team {
   font-weight: 400;
   color: var(--primary-color);
   padding: 0px 2px;
   text-align: center;
+  margin-right: 26px;
 }
 
 .li-team p {
   color: var(--detail-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-social-container {
+  width: 22px;
+  height: 22px;
+  padding: 12px;
+  margin-bottom: 22px;
+  border-radius: 100%;
+  background-color: var(--third-color);
+}
+
+.icon-social-container:hover {
+  border-radius: 100%;
+  background-color: var(--secundary-color);
+}
+
+.icon-item {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.icon-social-container:hover .icon-item {
+  fill: var(--third-color);
 }
 
 .li-work {
@@ -234,6 +322,38 @@ a {
   background: #f5f4fa;
 }
 
+.icon-clients-container {
+  cursor: pointer;
+  border: 1px #afb1b8 solid;
+  border-radius: 4px;
+  width: 150px;
+  height: 35px;
+  padding: 17px 11px;
+}
+
+.icon-clients {
+  width: 147px;
+  height: 40px;
+  fill: #afb1b8;
+}
+
+.icon-clients-container:hover {
+  border-color: var(--secundary-color);
+}
+
+.icon-clients-container:hover .icon-clients {
+  fill: var(--secundary-color);
+}
+
+.regular-clients {
+  padding-bottom: 151px;
+  padding-top: 59px;
+}
+
+.regular-clients h2 {
+  text-align: center;
+}
+
 .text-us {
   text-align: center;
   font-weight: 700;
@@ -241,6 +361,7 @@ a {
 
 .contact-address {
   padding-top: 5%;
+  height: 252px;
   background-color: var(--back-color);
   display: flex;
   flex-direction: column;
@@ -274,6 +395,52 @@ address ul {
 .mail-phone a:focus {
   color: var(--secundary-color);
 }
+
+.flex-list-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.h2-find {
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.flex-list-order {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.icon-socialcontainer-footer {
+  cursor: pointer;
+  background-color: #535458;
+  width: 23px;
+  height: 23px;
+  padding: 12px;
+  border-radius: 100%;
+}
+
+.icon-socialcontainer-footer:hover {
+  background-color: var(--secundary-color);
+}
+
+.icon-social-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-position {
+  margin-left: 1%;
+  display: flex;
+  align-items: baseline;
+}
+
 /*portfolio*/
 
 /*filters*/
